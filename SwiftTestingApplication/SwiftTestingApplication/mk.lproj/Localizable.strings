@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SwiftTestingApplication
+
+  Created by Stefan Stojanovski on 12/12/2020.
+  Copyright © 2020 Stefan Stojanovski. All rights reserved.
+*/
+
+"username" = "Корисничко име";
+"password" = "Лозинка";
+"email_error" = "Невалидна емаил адреса";
+"password_error" = "Пасводот мора да содржи најмалку 8 карактери, голема буква, мала буква и број";
+"login" = "Најави се";
