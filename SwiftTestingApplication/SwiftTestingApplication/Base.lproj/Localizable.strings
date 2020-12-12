@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SwiftTestingApplication
+
+  Created by Stefan Stojanovski on 12/12/2020.
+  Copyright © 2020 Stefan Stojanovski. All rights reserved.
+*/
+
+
+"username" = "Username";
+"password" = "Password";
+"email_error" = "Not valid email";
+"password_error" = "Your password must contain at least 8 letters, upercase letter, lowecase letter and numer";
+"login" = "Login";
