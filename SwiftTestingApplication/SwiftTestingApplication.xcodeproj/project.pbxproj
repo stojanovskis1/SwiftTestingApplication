@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8715C5182593BF3D007AAA95 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715C5172593BF3D007AAA95 /* RegisterViewController.swift */; };
+		8715C51A2593DD6F007AAA95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715C5192593DD6F007AAA95 /* MainViewController.swift */; };
 		87254268258513BE00E33C78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87254266258513BE00E33C78 /* Localizable.strings */; };
 		872542732585157900E33C78 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872542722585157900E33C78 /* LoginController.swift */; };
 		8729A3422570189E00CDAFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729A3412570189E00CDAFCF /* AppDelegate.swift */; };
@@ -17,7 +19,7 @@
 		8729A359257018A000CDAFCF /* SwiftTestingApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729A358257018A000CDAFCF /* SwiftTestingApplicationTests.swift */; };
 		8729A364257018A000CDAFCF /* SwiftTestingApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729A363257018A000CDAFCF /* SwiftTestingApplicationUITests.swift */; };
 		874CA21C258519AF00D3A448 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA21B258519AF00D3A448 /* String+extension.swift */; };
-		874CA2202585369200D3A448 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA21F2585369200D3A448 /* UIButton+extension.swift */; };
+		874CA2202585369200D3A448 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA21F2585369200D3A448 /* CustomButton.swift */; };
 		874CA22225853A3D00D3A448 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA22125853A3D00D3A448 /* UILabel+extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8715C5172593BF3D007AAA95 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8715C5192593DD6F007AAA95 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		87254267258513BE00E33C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8725426A258513CD00E33C78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8725426B258513D300E33C78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8725426C2585141100E33C78 /* mk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mk; path = mk.lproj/Main.strings; sourceTree = "<group>"; };
-		8725426D2585141100E33C78 /* mk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mk; path = mk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		8725426E2585141100E33C78 /* mk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mk; path = mk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		872542722585157900E33C78 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8729A33E2570189E00CDAFCF /* SwiftTestingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8729A3412570189E00CDAFCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,7 @@
 		8729A363257018A000CDAFCF /* SwiftTestingApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestingApplicationUITests.swift; sourceTree = "<group>"; };
 		8729A365257018A000CDAFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874CA21B258519AF00D3A448 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
-		874CA21F2585369200D3A448 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		874CA21F2585369200D3A448 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		874CA22125853A3D00D3A448 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				872542722585157900E33C78 /* LoginController.swift */,
+				8715C5172593BF3D007AAA95 /* RegisterViewController.swift */,
+				8715C5192593DD6F007AAA95 /* MainViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -155,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				874CA21B258519AF00D3A448 /* String+extension.swift */,
-				874CA21F2585369200D3A448 /* UIButton+extension.swift */,
 				874CA22125853A3D00D3A448 /* UILabel+extension.swift */,
+				874CA21F2585369200D3A448 /* CustomButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -247,7 +250,6 @@
 			knownRegions = (
 				en,
 				Base,
-				mk,
 			);
 			mainGroup = 8729A3352570189E00CDAFCF;
 			productRefGroup = 8729A33F2570189E00CDAFCF /* Products */;
@@ -296,10 +298,12 @@
 			files = (
 				874CA21C258519AF00D3A448 /* String+extension.swift in Sources */,
 				8729A3422570189E00CDAFCF /* AppDelegate.swift in Sources */,
+				8715C5182593BF3D007AAA95 /* RegisterViewController.swift in Sources */,
 				874CA22225853A3D00D3A448 /* UILabel+extension.swift in Sources */,
 				872542732585157900E33C78 /* LoginController.swift in Sources */,
 				8729A3442570189E00CDAFCF /* SceneDelegate.swift in Sources */,
-				874CA2202585369200D3A448 /* UIButton+extension.swift in Sources */,
+				874CA2202585369200D3A448 /* CustomButton.swift in Sources */,
+				8715C51A2593DD6F007AAA95 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +344,6 @@
 			children = (
 				87254267258513BE00E33C78 /* Base */,
 				8725426B258513D300E33C78 /* en */,
-				8725426E2585141100E33C78 /* mk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -350,7 +353,6 @@
 			children = (
 				8729A3482570189E00CDAFCF /* Base */,
 				8725426A258513CD00E33C78 /* en */,
-				8725426C2585141100E33C78 /* mk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -359,7 +361,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				8729A34D257018A000CDAFCF /* Base */,
-				8725426D2585141100E33C78 /* mk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

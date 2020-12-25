@@ -20,7 +20,6 @@ extension String {
     
     func isValidPassword() -> Bool {
           do {
-
             let regexInclude = try NSRegularExpression(pattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}")
                  return regexInclude.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.count)) != nil
             

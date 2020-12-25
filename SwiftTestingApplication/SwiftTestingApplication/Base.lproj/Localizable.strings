@@ -9,6 +9,11 @@
 
 "username" = "Username";
 "password" = "Password";
+"first_name" = "First Name";
+"last_name" = "Last Name";
+"email" = "Email";
 "email_error" = "Not valid email";
-"password_error" = "Your password must contain at least 8 letters, upercase letter, lowecase letter and numer";
-"login" = "Login";
+"password_error" = "Your password must contain at least 8 letters, upercase letter, lowecase letter and number";
+"login" = "Login"; 
+"register" = "Register";
+
