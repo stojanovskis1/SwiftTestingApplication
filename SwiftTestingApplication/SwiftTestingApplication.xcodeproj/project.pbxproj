@@ -17,10 +17,13 @@
 		8729A34B257018A000CDAFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8729A34A257018A000CDAFCF /* Assets.xcassets */; };
 		8729A34E257018A000CDAFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8729A34C257018A000CDAFCF /* LaunchScreen.storyboard */; };
 		8729A359257018A000CDAFCF /* SwiftTestingApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729A358257018A000CDAFCF /* SwiftTestingApplicationTests.swift */; };
-		8729A364257018A000CDAFCF /* SwiftTestingApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729A363257018A000CDAFCF /* SwiftTestingApplicationUITests.swift */; };
 		874CA21C258519AF00D3A448 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA21B258519AF00D3A448 /* String+extension.swift */; };
 		874CA2202585369200D3A448 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA21F2585369200D3A448 /* CustomButton.swift */; };
 		874CA22225853A3D00D3A448 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA22125853A3D00D3A448 /* UILabel+extension.swift */; };
+		8753E4D225B7427D003A12D7 /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E4D025B7427D003A12D7 /* BooksCell.swift */; };
+		8753E4D325B7427D003A12D7 /* BooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753E4D125B7427D003A12D7 /* BooksCell.xib */; };
+		8753E4DF25B7521B003A12D7 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E4D725B74E09003A12D7 /* LoginTests.swift */; };
+		8753E51925B774A8003A12D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87254266258513BE00E33C78 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +61,13 @@
 		8729A358257018A000CDAFCF /* SwiftTestingApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestingApplicationTests.swift; sourceTree = "<group>"; };
 		8729A35A257018A000CDAFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8729A35F257018A000CDAFCF /* SwiftTestingApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestingApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8729A363257018A000CDAFCF /* SwiftTestingApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestingApplicationUITests.swift; sourceTree = "<group>"; };
 		8729A365257018A000CDAFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874CA21B258519AF00D3A448 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		874CA21F2585369200D3A448 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		874CA22125853A3D00D3A448 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
+		8753E4D025B7427D003A12D7 /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
+		8753E4D125B7427D003A12D7 /* BooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksCell.xib; sourceTree = "<group>"; };
+		8753E4D725B74E09003A12D7 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 		872542712585157900E33C78 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				87E0D4B625B7398A003F35F0 /* BooksCell */,
 				872542722585157900E33C78 /* LoginController.swift */,
 				8715C5172593BF3D007AAA95 /* RegisterViewController.swift */,
 				8715C5192593DD6F007AAA95 /* MainViewController.swift */,
@@ -148,7 +154,7 @@
 		8729A362257018A000CDAFCF /* SwiftTestingApplicationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8729A363257018A000CDAFCF /* SwiftTestingApplicationUITests.swift */,
+				8753E4D725B74E09003A12D7 /* LoginTests.swift */,
 				8729A365257018A000CDAFCF /* Info.plist */,
 			);
 			path = SwiftTestingApplicationUITests;
@@ -162,6 +168,15 @@
 				874CA21F2585369200D3A448 /* CustomButton.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		87E0D4B625B7398A003F35F0 /* BooksCell */ = {
+			isa = PBXGroup;
+			children = (
+				8753E4D025B7427D003A12D7 /* BooksCell.swift */,
+				8753E4D125B7427D003A12D7 /* BooksCell.xib */,
+			);
+			path = BooksCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +287,7 @@
 				87254268258513BE00E33C78 /* Localizable.strings in Resources */,
 				8729A34B257018A000CDAFCF /* Assets.xcassets in Resources */,
 				8729A3492570189E00CDAFCF /* Main.storyboard in Resources */,
+				8753E4D325B7427D003A12D7 /* BooksCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8753E51925B774A8003A12D7 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +321,7 @@
 				8729A3442570189E00CDAFCF /* SceneDelegate.swift in Sources */,
 				874CA2202585369200D3A448 /* CustomButton.swift in Sources */,
 				8715C51A2593DD6F007AAA95 /* MainViewController.swift in Sources */,
+				8753E4D225B7427D003A12D7 /* BooksCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8729A364257018A000CDAFCF /* SwiftTestingApplicationUITests.swift in Sources */,
+				8753E4DF25B7521B003A12D7 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +440,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -477,6 +496,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

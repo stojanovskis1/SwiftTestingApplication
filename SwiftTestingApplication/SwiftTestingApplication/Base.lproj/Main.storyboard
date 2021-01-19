@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cIE-yk-9Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cIE-yk-9Ks">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,6 +25,10 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-lf-65M">
                                 <rect key="frame" x="30" y="389" width="315" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="username_txt">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -34,6 +40,10 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-eb-I0y">
                                 <rect key="frame" x="30" y="453" width="315" height="34"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -45,8 +55,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPG-Nc-Sm1" customClass="CustomButton" customModule="SwiftTestingApplication" customModuleProvider="target">
                                 <rect key="frame" x="60" y="531" width="255" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="login_btn" identifier="login_btn" label="login_btn"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="onClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5r5-yy-eHH"/>
@@ -62,14 +73,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-pT-83g" customClass="CustomButton" customModule="SwiftTestingApplication" customModuleProvider="target">
                                 <rect key="frame" x="60" y="595" width="255" height="34"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="onClickRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVY-ez-iQx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PYT-pT-83g" secondAttribute="bottom" constant="10" id="0qg-Sg-WYm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPG-Nc-Sm1" secondAttribute="trailing" constant="60" id="0wV-Y0-tUR"/>
@@ -97,14 +109,13 @@
                             <constraint firstItem="eOM-AH-w3Q" firstAttribute="top" secondItem="qu0-lf-65M" secondAttribute="bottom" constant="15" id="ykh-LL-9v1"/>
                             <constraint firstItem="qu0-lf-65M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zUf-B7-oxX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="3pJ-dy-aCR"/>
                     <connections>
                         <outlet property="error_lbl" destination="e24-To-rxC" id="0m4-XD-SCT"/>
                         <outlet property="login_btn" destination="dPG-Nc-Sm1" id="F3l-EB-BfF"/>
+                        <outlet property="pass_txt" destination="Gg9-eb-I0y" id="Viz-0B-OIT"/>
                         <outlet property="password_lbl" destination="eOM-AH-w3Q" id="ek4-xd-ZB7"/>
-                        <outlet property="password_txt" destination="Gg9-eb-I0y" id="rH0-Jh-Fed"/>
                         <outlet property="register_btn" destination="PYT-pT-83g" id="IIy-Eq-UT0"/>
                         <outlet property="username_lbl" destination="wcU-92-tvX" id="p6d-Xh-QGf"/>
                         <outlet property="username_txt" destination="qu0-lf-65M" id="qeJ-sT-o9F"/>
@@ -178,7 +189,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-NQ-My7" customClass="CustomButton" customModule="SwiftTestingApplication" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-NQ-My7" customClass="CustomButton" customModule="SwiftTestingApplication" customModuleProvider="target">
                                 <rect key="frame" x="30" y="437" width="315" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -186,7 +197,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xis-Zb-0pS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Xis-Zb-0pS" firstAttribute="trailing" secondItem="5W5-Pw-wV6" secondAttribute="trailing" constant="30" id="0XS-pO-Vk1"/>
                             <constraint firstItem="FPQ-Ek-Q2X" firstAttribute="leading" secondItem="Xis-Zb-0pS" secondAttribute="leading" constant="30" id="2pf-Mm-NBy"/>
@@ -222,7 +234,6 @@
                             <constraint firstItem="Xis-Zb-0pS" firstAttribute="trailing" secondItem="003-2S-HpS" secondAttribute="trailing" constant="30" id="ygl-4V-KjH"/>
                             <constraint firstItem="Xis-Zb-0pS" firstAttribute="trailing" secondItem="1kv-NQ-My7" secondAttribute="trailing" constant="30" id="z0W-SM-DfB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xis-Zb-0pS"/>
                     </view>
                     <connections>
                         <outlet property="email_error_lbl" destination="goQ-At-Q8Y" id="9rL-E7-2Vf"/>
@@ -256,7 +267,7 @@
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6EI-WD-ASV">
                                 <rect key="frame" x="5" y="120" width="365" height="600"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="600" id="2t7-ay-j9c"/>
                                 </constraints>
@@ -266,7 +277,8 @@
                                 </imageView>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XAE-Vl-qC0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XAE-Vl-qC0" firstAttribute="trailing" secondItem="VKr-xo-91t" secondAttribute="trailing" id="Gk7-vb-4GO"/>
                             <constraint firstItem="6EI-WD-ASV" firstAttribute="top" secondItem="VKr-xo-91t" secondAttribute="bottom" constant="10" id="W8V-fe-Uzf"/>
@@ -275,8 +287,10 @@
                             <constraint firstItem="VKr-xo-91t" firstAttribute="leading" secondItem="XAE-Vl-qC0" secondAttribute="leading" id="stW-mp-mgm"/>
                             <constraint firstItem="VKr-xo-91t" firstAttribute="top" secondItem="XAE-Vl-qC0" secondAttribute="top" constant="10" id="vN5-1h-ofi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XAE-Vl-qC0"/>
                     </view>
+                    <connections>
+                        <outlet property="books_table_view" destination="6EI-WD-ASV" id="Kfh-dy-kNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amI-O6-aXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,5 +317,11 @@
     </scenes>
     <resources>
         <image name="books_icon" width="410" height="430"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
