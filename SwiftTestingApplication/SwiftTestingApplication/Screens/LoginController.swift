@@ -46,7 +46,6 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     func setupForTesting(){
-        
         pass_txt.isAccessibilityElement = true
         username_txt.isAccessibilityElement = true
         error_lbl.isAccessibilityElement = true

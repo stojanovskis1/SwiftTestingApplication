@@ -8,17 +8,17 @@
 
 import XCTest
 
-class LoginTests: XCTestCase {
+class LoginErrorTests: XCTestCase {
     var app = XCUIApplication()
    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
             continueAfterFailure = false
+        UserDefaults.standard.removeObject(forKey: "isUserLoggedIn")
             app = XCUIApplication()
+            app.launchArguments = ["-StartFromCleanState", "YES"]
             app.launch()
-        
-      
     }
 
     override func tearDown() {
@@ -74,6 +74,8 @@ class LoginTests: XCTestCase {
         XCTAssert(!app.staticTexts.element(matching:.any, identifier: "login_error_lbl").label.isEmpty)
 //        XCTAssertEqual(app.staticTexts.element(matching:.any, identifier: "login_error_lbl").label, NSLocalizedString("email_error", comment: ""))
     }
+    
+
 
 
 }

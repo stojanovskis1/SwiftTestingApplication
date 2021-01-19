@@ -14,6 +14,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var books_table_view: UITableView!
     
+    override func viewDidLoad() {
+        setupForTesting()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
@@ -22,6 +26,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         books_table_view.dataSource = self
         books_table_view.bounces = false
         books_table_view.register(UINib.init(nibName: "BooksCell", bundle: nil), forCellReuseIdentifier: "BooksCell")
+    }
+    
+    
+    
+    func setupForTesting(){
+        
+        books_table_view.isAccessibilityElement = true
+        books_table_view.accessibilityIdentifier = "books_table_view_main"
     }
     
     // MARK - Table delegate

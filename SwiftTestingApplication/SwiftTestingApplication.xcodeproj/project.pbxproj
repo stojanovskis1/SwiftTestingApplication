@@ -22,8 +22,9 @@
 		874CA22225853A3D00D3A448 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CA22125853A3D00D3A448 /* UILabel+extension.swift */; };
 		8753E4D225B7427D003A12D7 /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E4D025B7427D003A12D7 /* BooksCell.swift */; };
 		8753E4D325B7427D003A12D7 /* BooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753E4D125B7427D003A12D7 /* BooksCell.xib */; };
-		8753E4DF25B7521B003A12D7 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E4D725B74E09003A12D7 /* LoginTests.swift */; };
+		8753E4DF25B7521B003A12D7 /* LoginErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E4D725B74E09003A12D7 /* LoginErrorTests.swift */; };
 		8753E51925B774A8003A12D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87254266258513BE00E33C78 /* Localizable.strings */; };
+		8753E53C25B77ADA003A12D7 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753E53B25B77ADA003A12D7 /* LoginTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,8 @@
 		874CA22125853A3D00D3A448 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 		8753E4D025B7427D003A12D7 /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
 		8753E4D125B7427D003A12D7 /* BooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksCell.xib; sourceTree = "<group>"; };
-		8753E4D725B74E09003A12D7 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		8753E4D725B74E09003A12D7 /* LoginErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrorTests.swift; sourceTree = "<group>"; };
+		8753E53B25B77ADA003A12D7 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +156,9 @@
 		8729A362257018A000CDAFCF /* SwiftTestingApplicationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8753E4D725B74E09003A12D7 /* LoginTests.swift */,
+				8753E4D725B74E09003A12D7 /* LoginErrorTests.swift */,
 				8729A365257018A000CDAFCF /* Info.plist */,
+				8753E53B25B77ADA003A12D7 /* LoginTest.swift */,
 			);
 			path = SwiftTestingApplicationUITests;
 			sourceTree = "<group>";
@@ -337,7 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8753E4DF25B7521B003A12D7 /* LoginTests.swift in Sources */,
+				8753E4DF25B7521B003A12D7 /* LoginErrorTests.swift in Sources */,
+				8753E53C25B77ADA003A12D7 /* LoginTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
